@@ -7,95 +7,72 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Utkarsha Chandgadkar</h1>
-        <p>Database Administrator | Software Engineer</p>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <img src="path-to-your-photo.jpg" alt="Utkarsha Chandgadkar" class="profile-photo">
+            <h1>Utkarsha Chandgadkar</h1>
+            <p>Database Administrator | Software Engineer</p>
+            <p>Email: <a href="mailto:uxc220003@utdallas.edu">uxc220003@utdallas.edu</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/utkarsha13">https://www.linkedin.com/in/utkarsha13</a></p>
+        </aside>
 
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Experienced Database Administrator and Software Engineer with over 3 years of expertise in SQL, MSSQL, PostgreSQL, and AWS Cloud Databases and Services. Proficient in Python, demonstrating strong adaptability, problem-solving, teamwork, and leadership skills. Committed to leveraging these abilities to drive business success.</p>
-        </section>
+        <main class="content">
+            <section id="about">
+                <h2>About Me</h2>
+                <p>Experienced Database Administrator/Software Engineer with over 3 years of expertise in SQL, MSSQL, PostgreSQL, and AWS Cloud Databases and Services. Proficient in Python, demonstrating strong adaptability, problem-solving, teamwork, and leadership skills. Committed to leveraging these abilities to drive business success.</p>
+            </section>
 
-        <section id="skills">
-            <h2>Technical Skills</h2>
-            <ul>
-                <li><strong>Programming Languages:</strong> Python, JSON, PowerShell</li>
-                <li><strong>Database Skills:</strong> SQL, Amazon Aurora, Amazon Redshift, Amazon RDS, PostgreSQL</li>
-                <li><strong>Database Tools:</strong> SSMS, Azure Data Studio, Azure Data Factory, SSIS, SSRS, SQL Profiler, AWS, Azure, Microsoft Excel</li>
-                <li><strong>DevOps Tools:</strong> Docker, Kubernetes, Jenkins, Git, Terraform</li>
-                <li><strong>Operating Systems:</strong> Windows, Linux</li>
-                <li><strong>Security Concepts:</strong> Authentication, Authorization, Data Masking, Auditing and Logging, Vulnerability Management</li>
-                <li><strong>Certifications:</strong> Database and SQL Data Science from IBM, AWS Solution Architect Associate, Microsoft Database Fundamentals, AWS Cloud Practitioner</li>
-            </ul>
-        </section>
-
-        <section id="experience">
-            <h2>Work Experience</h2>
-            <h3>Database Administrator, Capgemini (Oct 2019 - Nov 2022)</h3>
-            <ul>
-                <li>Developed and optimized T-SQL queries and scripts for database restoration, improving team productivity by 25%.</li>
-                <li>Managed 24/7 SQL operations, reducing average resolution time by 30% and enhancing client satisfaction.</li>
-                <li>Designed a SQL Server application integrated with Azure Data Factory, processing over 500,000 records daily.</li>
-                <li>Established high availability configurations using SQL Server solutions, achieving 99.8% uptime.</li>
-                <li>Orchestrated seamless data migration, resulting in a 30% reduction in migration time and a 20% improvement in data accuracy.</li>
-                <li>Enhanced database performance by optimizing indexes and triggers, leading to a 40% improvement in query response times.</li>
-                <li>Spearheaded the deployment and management of AWS RDS and Azure SQL, achieving outstanding performance enhancements.</li>
-            </ul>
-        </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-            <ul>
-                <li>
-                    <strong>Dynamic Data Visualization in Google Play Store Dataset</strong> (Jan 2023 - May 2023)
+            <section id="projects">
+                <h2>Projects</h2>
+                <div class="project-block" onclick="toggleDetails('project1')">
+                    <h3>Dynamic Data Visualization in Google Play Store Dataset</h3>
+                    <p>(Jan 2023 - May 2023)</p>
+                </div>
+                <div class="project-details" id="project1">
                     <ul>
                         <li>Deployed Matplotlib and Seaborn for advanced data manipulation, achieving a 20% increase in efficiency.</li>
                         <li>Produced insightful charts and dashboards using Power BI and Python, enhancing data-driven decision-making.</li>
-                        <li><a href="https://drive.google.com/drive/folders/1ypF0hkfcYMGpxU8UXEzIlN5Oicdjoj0h" target="_blank">Project Link</a></li>
+                        <li><a href="link-to-code" target="_blank">Code</a> | <a href="link-to-pdf" target="_blank">PDF Report</a></li>
                     </ul>
-                </li>
-                <li>
-                    <li>
-                    <strong>PostgreSQL Database for Comet Way Rental Website</strong> (Jan 2023 - May 2023)
-                <ul>
-                    <li>Designed ERD diagrams and implemented a PostgreSQL database, improving query performance by 30%.</li>
-                    <li>Executed optimized SQL queries, enhancing overall database performance by 25%.<a href="https://drive.google.com/drive/folders/1ieYabYnR56ZNeQ5PBj4KZZxDmkC1ZvYH" target="_blank">Project Link</a></li>
-    </ul>
-</li>
-<li>
-    <strong>PostgreSQL Database Solution for Financial Operations Application</strong> (Aug 2024 - Dec 2024)
-    <ul>
-        <li>Developed a robust PostgreSQL database managing over 1 million records.</li>
-        <li>Collaborated with the front-end team for seamless ETL processes using Python.</li>
-        <li><a href="link-to-code" target="_blank">Code</a> | <a href="link-to-pdf" target="_blank">PDF Report</a></li>
-    </ul>
-</li>
+                </div>
 
+                <div class="project-block" onclick="toggleDetails('project2')">
+                    <h3>PostgreSQL Database for Comet Way Rental Website</h3>
+                    <p>(Jan 2023 - May 2023)</p>
+                </div>
+                <div class="project-details" id="project2">
+                    <ul>
+                        <li>Designed ERD diagrams and implemented a PostgreSQL database, improving query performance by 30%.</li>
+                        <li>Executed optimized SQL queries, enhancing overall database performance by 25%.</li>
+                        <li><a href="link-to-code" target="_blank">Code</a> | <a href="link-to-pdf" target="_blank">PDF Report</a></li>
                     </ul>
-                </li>
-            </ul>
-        </section>
+                </div>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:uxc220003@utdallas.edu">uxc220003@utdallas.edu</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/utkarsha13" target="_blank">https://www.linkedin.com/in/utkarsha13</a></p>
-        </section>
-    </main>
+                <div class="project-block" onclick="toggleDetails('project3')">
+                    <h3>PostgreSQL Database Solution for Financial Operations Application</h3>
+                    <p>(Aug 2024 - Dec 2024)</p>
+                </div>
+                <div class="project-details" id="project3">
+                    <ul>
+                        <li>Developed a robust PostgreSQL database managing over 1 million records.</li>
+                        <li>Collaborated with the front-end team for seamless ETL processes using Python.</li>
+                        <li><a href="link-to-code" target="_blank">Code</a> | <a href="link-to-pdf" target="_blank">PDF Report</a></li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
 
     <footer>
         <p>&copy; 2024 Utkarsha Chandgadkar. All rights reserved.</p>
     </footer>
+
+    <script>
+        function toggleDetails(projectId) {
+            const details = document.getElementById(projectId);
+            details.style.display = (details.style.display === "none" || details.style.display === "") ? "block" : "none";
+        }
+    </script>
 </body>
 </html>
+
