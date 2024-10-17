@@ -1,106 +1,70 @@
-
-/* Reset some default styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
     color: #333;
 }
 
-/* Header styles */
 header {
-    background: linear-gradient(135deg, #6e7dff, #4a90e2);
-    color: white;
-    padding: 40px 20px;
+    background: #007BFF;
+    color: #fff;
+    padding: 20px;
     text-align: center;
 }
 
 header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+    margin: 0;
 }
 
-header p {
-    font-size: 1.2rem;
-}
-
-/* Navigation styles */
 nav ul {
     list-style: none;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
 }
 
 nav ul li {
+    display: inline;
     margin: 0 15px;
 }
 
 nav ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: background 0.3s ease;
 }
 
-nav ul li a:hover {
-    background: rgba(255, 255, 255, 0.2);
-}
-
-/* Section styles */
-section {
-    padding: 20px;
-    margin: 20px auto;
+main {
     max-width: 800px;
-    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 h2 {
-    color: #4a90e2;
-    margin-bottom: 15px;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 5px;
 }
 
-/* Footer styles */
+ul {
+    padding-left: 20px;
+}
+
+a {
+    color: #007BFF;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 footer {
     text-align: center;
-    padding: 20px;
-    background: #333;
-    color: white;
+    padding: 10px;
+    background: #007BFF;
+    color: #fff;
     position: relative;
     bottom: 0;
     width: 100%;
-}
-
-/* Media queries for responsive design */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2rem;
-    }
-
-    header p {
-        font-size: 1rem;
-    }
-
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-
-    section {
-        margin: 10px;
-        padding: 15px;
-    }
 }
