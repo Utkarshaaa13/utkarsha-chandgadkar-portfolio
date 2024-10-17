@@ -73,6 +73,17 @@
             details.style.display = (details.style.display === "none" || details.style.display === "") ? "block" : "none";
         }
     </script>
+    <script>
+function toggleDetails(projectId) {
+    const details = document.getElementById(projectId);
+    if (details.style.display === "none" || details.style.display === "") {
+        details.style.display = "block"; // Show details
+    } else {
+        details.style.display = "none"; // Hide details
+    }
+}
+</script>
+
 </body>
 </html>
 
