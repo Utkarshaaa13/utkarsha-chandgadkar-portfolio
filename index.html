@@ -1,92 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Utkarsha Chandgadkar Portfolio</title>
-    <link rel="stylesheet" href="<link rel="stylesheet" href="https://raw.githubusercontent.com/Utkarshaaa13/utkarsha-chandgadkar-portfolio/main/styles.css">
-">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- About Me Section -->
+  <section id="about">
     <div class="container">
-        <aside class="sidebar">
-            <img src="path-to-your-photo.jpg" alt="Utkarsha Chandgadkar" class="profile-photo">
-            <h1>Utkarsha Chandgadkar</h1>
-            <p>Database Administrator | Software Engineer</p>
-            <p>Email: <a href="mailto:uxc220003@utdallas.edu">uxc220003@utdallas.edu</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/utkarsha13">https://www.linkedin.com/in/utkarsha13</a></p>
-        </aside>
-
-        <main class="content">
-            <section id="about">
-                <h2>About Me</h2>
-                <p>Experienced Database Administrator/Software Engineer with over 3 years of expertise in SQL, MSSQL, PostgreSQL, and AWS Cloud Databases and Services. Proficient in Python, demonstrating strong adaptability, problem-solving, teamwork, and leadership skills. Committed to leveraging these abilities to drive business success.</p>
-            </section>
-
-            <section id="experience">
-                <h2>Work Experience</h2>
-                <h3>Database Administrator, Capgemini (Oct 2019 - Nov 2022)</h3>
-                <ul>
-                    <li>Developed and optimized T-SQL queries and scripts for database restoration, improving overall team productivity by 25%.</li>
-                    <li>Managed 24/7 SQL operations to swiftly address critical database issues, successfully reducing average resolution time by 30%.</li>
-                    <li>Designed and implemented a SQL Server application integrated with Azure Data Factory, processing over 500,000 records daily.</li>
-                    <li>Established high availability configurations using SQL Server solutions, achieving an uptime of 99.8%.</li>
-                    <li>Orchestrated seamless data migration, resulting in a 30% reduction in migration time and a 20% improvement in data accuracy.</li>
-                    <li>Enhanced database performance by optimizing indexes and triggers, leading to a 40% improvement in query response times.</li>
-                    <li>Spearheaded the deployment and management of AWS RDS and Azure SQL, achieving outstanding performance enhancements.</li>
-                </ul>
-            </section>
-
-            <section id="projects">
-                <h2>Projects</h2>
-                <div class="project-block" onclick="toggleDetails('project1')">
-                    <h3>Dynamic Data Visualization in Google Play Store Dataset</h3>
-                    <p>(Jan 2023 - May 2023)</p>
-                </div>
-                <div class="project-details" id="project1">
-                    <ul>
-                        <li>Deployed Matplotlib and Seaborn for advanced data manipulation, achieving a 20% increase in efficiency.</li>
-                        <li>Produced insightful charts and dashboards using Power BI and Python, enhancing data-driven decision-making.</li>
-                        <li><a href="link-to-code" target="_blank">Code</a> | <a href="link-to-pdf" target="_blank">PDF Report</a></li>
-                    </ul>
-                </div>
-
-                <div class="project-block" onclick="toggleDetails('project2')">
-                    <h3>PostgreSQL Database for Comet Way Rental Website</h3>
-                    <p>(Jan 2023 - May 2023)</p>
-                </div>
-                <div class="project-details" id="project2">
-                    <ul>
-                        <li>Designed ERD diagrams and implemented a PostgreSQL database, improving query performance by 30%.</li>
-                        <li>Executed optimized SQL queries, enhancing overall database performance by 25%.</li>
-                        <li><a href="link-to-code" target="_blank">Code</a> | <a href="link-to-pdf" target="_blank">PDF Report</a></li>
-                    </ul>
-                </div>
-
-                <div class="project-block" onclick="toggleDetails('project3')">
-                    <h3>PostgreSQL Database Solution for Financial Operations Application</h3>
-                    <p>(Aug 2024 - Dec 2024)</p>
-                </div>
-                <div class="project-details" id="project3">
-                    <ul>
-                        <li>Developed a robust PostgreSQL database managing over 1 million records.</li>
-                        <li>Collaborated with the front-end team for seamless ETL processes using Python.</li>
-                        <li><a href="link-to-code" target="_blank">Code</a> | <a href="link-to-pdf" target="_blank">PDF Report</a></li>
-                    </ul>
-                </div>
-            </section>
-        </main>
+      <img src="your-photo.jpg" alt="Your Photo" class="profile-img">
+      <div class="about-text">
+        <h1>About Me</h1>
+        <p><strong>Professional:</strong> I am a passionate web developer with expertise in full-stack development. I specialize in HTML, CSS, JavaScript, and Python. My goal is to create impactful, user-friendly web applications.</p>
+        <p><strong>Education:</strong> I have a degree in Computer Science from [University Name], where I developed a strong foundation in programming and problem-solving skills.</p>
+        <p><strong>Personal:</strong> Outside of coding, I love reading books, hiking, and exploring new technologies. I am always eager to learn and grow both professionally and personally.</p>
+        <p><strong>Motivation:</strong> What motivates me to keep going is the challenge of solving complex problems and creating something new that can make a difference in people's lives.</p>
+        <p><strong>Volunteering:</strong> During my time in college, I volunteered as a mentor for junior students, helping them understand the basics of programming and web development.</p>
+      </div>
     </div>
+  </section>
 
-    <footer>
-        <p>&copy; 2024 Utkarsha Chandgadkar. All rights reserved.</p>
-    </footer>
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML, CSS, JavaScript</li>
+      <li>React, Node.js, Express</li>
+      <li>Python, Django</li>
+      <li>Database Management (MySQL, MongoDB)</li>
+      <li>Version Control (Git, GitHub)</li>
+      <li>Problem Solving, Communication, Teamwork</li>
+    </ul>
+  </section>
 
-    <script>
-        function toggleDetails(projectId) {
-            const details = document.getElementById(projectId);
-            details.style.display = (details.style.display === "none" || details.style.display === "") ? "block" : "none";
-        }
-    </script>
+  <!-- Work Experience Section -->
+  <section id="work-experience">
+    <h2>Work Experience</h2>
+    <div class="experience">
+      <h3>[Job Title] at [Company Name]</h3>
+      <p><strong>Dates:</strong> [Start Date] - [End Date]</p>
+      <p>[Brief Description of Responsibilities and Achievements]</p>
+    </div>
+    <!-- Repeat the above block for each work experience -->
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3><a href="https://github.com/your-username/project1">Project 1</a></h3>
+      <p>Description of Project 1 and what technologies you used.</p>
+    </div>
+    <div class="project">
+      <h3><a href="https://github.com/your-username/project2">Project 2</a></h3>
+      <p>Description of Project 2 and what technologies you used.</p>
+    </div>
+    <!-- Repeat for additional projects -->
+  </section>
+
+  <!-- Contact Information Section -->
+  <section id="contact">
+    <h2>Contact Information</h2>
+    <p>Email: your.email@example.com</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/your-profile">your-profile</a></p>
+    <p>GitHub: <a href="https://github.com/your-username">your-username</a></p>
+  </section>
 </body>
 </html>
